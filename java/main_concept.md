@@ -36,3 +36,13 @@
 * 외부로부터 데이터를 보호하기 위해
 * 외부에는 불필요한, 내부적으로만 사용되는 부분을 감추기 위해
 
+<br/><br/><br/><br/><br/>
+
+## List 에서 null과 isEmpty()의 차이점
+
+* isEmpty나 size는 null을 체크한 후에 이루어져야 하는 동작.
+* 만약 list가 null인 상태에서 size나 isEmpty를 호출하면 java.lang.NullPointerException 발생!
+* list == null과 list.isEmpty()의 차이점
+ * list == null인 경우에는 list 변수가 그 어떤 주소 값도 참조하지 않은 상태를 의미함
+ (다시 말하자면 인스턴스 생성되어 있지 않는 상태를 의미한다.)
+ * list.isEmpty()는 인스턴스는 생성되어 있지만(또는 주소 값을 참조하고는 있지만) 아무런 데이터가 적재되어 있지 않은 상태를 의미.
