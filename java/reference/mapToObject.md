@@ -1,4 +1,4 @@
-## copyDataToObject
+## copyDataMapToObject
 
 ### 설명
 ***
